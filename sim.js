@@ -2,7 +2,7 @@
   var transition = document.getElementById("transition") // THE ENTIRE CODE OF THE TRANSITION PAGE
   var sim = document.getElementById("sim") // THE ENTIRE CODE OF THE SIMULATION 
   var audio_despondency = new Audio('audio/gratitudeSpace.mp3'); // AUDIO FOR DESPONDENCY 
-  var audio_anxiousness = new Audio('audio/tension_releaseSpace.mp3.mp3'); // AUDIO FOR ANXIOUSNESS
+  var audio_anxiousness = new Audio('audio/tension_releaseSpace.mp3'); // AUDIO FOR ANXIOUSNESS
   var audio_overwhelmed = new Audio('audio/deep_breathingSpace.mp3'); // AUDIO FOR OVERHWHELMED
   var audio_stress = new Audio('audio/self_loveSpace.mp3'); // AUDIO FOR STRESS
 
