@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+            <link rel="stylesheet" type="text/css" href="index.css"> 
+            <title>Improve Mental Health by Virtual Reality</title>
+        </head>
+    <section id="beginning" style="width: 100%"> 
+        <div class="container"> 
+            <div class="row mb-5" > <!-- TOP ROW = First things you see when are on the homepage -->
+                <div class="col-xs-12 col-sm-12 col-lg-5 mt-3">
+                    <img class="first_img ml-5" src="new_img/lady_vr.jpg" alt="person wearing vr goggles"> <!-- Girl wearing VR goggles -->
+                </div>
+                <div class="start_text col-xs-12 col-sm-12 col-lg-7 mt-5 text-center"> 
+                    <p class="title"> Improve Your Mental Health by Virtual Reality</p> <!-- Title -->
+                    <p class="welcome">WELCOME TO A PEACEFUL PLACE</p> <!-- Phrase to draw attention --> 
+                    <p class="line_summary mt-2">There are various Virtual Reality simulations to make a negative mindset a positive one.</p> <!-- quick summary -->
+                </div>
+            </div>
+            <div class="row summary mt-5 mb-5" > <!-- 2ND ROW = Second thing you will see when you scroll down  -->
+                <div class="col-xs-12">
+                    <p class="mt-2 summary_heading text-center">
+                        S U M M A R Y 
+                    </p>
+                    <p class="ml-2 mr-2 mb-5 summary_text">
+                    I created simulations via Virtual Reality for different negative
+                    mental states including: stress, anxiousness, overwhelmed, and despondency. 
+                    The simulations were created with the purpose of reducing and reversing the effects of those harmful states. 
+                    Each simulation is around 5 to 6 minutes, has a serene and beautiful surrounding, 
+                    features a calming guided meditation or excerise, and provides extensive research information. 
+                    </p>
+                </div>
+            </div>
+            </section>
+        </div>
+    </section>
+    <section id="sims"> <!-- MINDSET Descriptions and simulation links attached to them --> 
+        <div class="container">
+            <div class="row the_sim"> <!-- STRESS -->
+                <div class="col-xs-12 col-sm-12 col-lg-4 text-center mb-3">
+                    <img class="sim_image mt-4" src="new_img/big_trees.jpg" alt="nature">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-lg-8">
+                    <p class="text-center title mt-4 ">STRESS</p>
+                        <p><strong>My Definiton:</strong> Stress is defined as a state of mind that leads to negative thinking and frustration over specific present circumstance(s).</p>
+                        <div class="text-center">
+                            <button onclick="stress_sim()">Simulation</button> <!-- onclick="stress_sim()" starts a function, 
+                                                                                    which is like a body of code to be executed, that takes them to the other page. 
+                                                                                    To see the function, it's in my linked Javascript file called index.js  -->
+                        </div>
+                </div>
+            </div>
+            <div class="row mt-5 the_sim"> <!-- ANXIOUSNESS -->
+                <div class="col-xs-12 col-sm-12 col-lg-4 text-center mb-3">
+                    <img class="sim_image mt-4" src="new_img/waves_blue.jpg" alt="nature">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-lg-8">
+                    <p class="text-center title mt-4">ANXIOUSNESS</p>
+                        <p><strong>My Definiton:</strong> Anxiousness is defined as a state of mind negatively focused on unknown outcomes of specific events.</p>
+                        <div class="text-center">
+                            <button onclick="anxiousness_sim()">Simulation</button> <!-- onclick="anxiousness_sim()" starts a function, 
+                                                                                    which is like a body of code to be executed, that takes them to the other page. 
+                                                                                    To see the function, it's in my linked Javascript file called index.js  -->
+                        </div>
+                </div>
+            </div>
+             <div class="row mt-5 the_sim"> <!-- OVERWHELMED -->
+                <div class="col-xs-12 col-sm-12 col-lg-4 text-center mb-3">
+                    <img class="sim_image mt-4" src="new_img/cherry_blossom.jpg" alt="nature">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-lg-8">
+                    <p class="text-center title mt-4 ">OVERWHELMED</p>
+                        <p><strong>My Definiton:</strong> Overwhelmed is defined as a state of mind with the perception that certain task(s) or 
+                        combination of tasks are emotionally consuming.</p>
+                        <div class="text-center">
+                            <button onclick="overwhelmed_sim()">Simulation</button> <!-- onclick="overwhelmed_sim()" starts a function, 
+                                                                                    which is like a body of code to be executed, that takes them to the other page. 
+                                                                                    To see the function, it's in my linked Javascript file called index.js  -->
+                        </div>
+                </div>
+            </div>
+             <div class="row mt-5 mb-5 the_sim_end"> <!-- DESPONDENCY -->
+                <div class="col-xs-12 col-sm-12 col-lg-4 text-center mb-3">
+                    <img class="sim_image mt-4" src="new_img/cool_forest.jpg" alt="nature">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-lg-8">
+                    <p class="text-center title mt-4 ">DESPONDENCY</p>
+                        <p><strong>My Definiton:</strong> Despondency is defined as a state of mind of unhappiness, hopelessness, and non-motivation. </p>
+                        <div class="text-center">
+                            <button class="mb-3" onclick="despondency_sim()">Simulation</button> <!-- onclick="despondency_sim()" starts a function, 
+                                                                                    which is like a body of code to be executed, that takes them to the other page. 
+                                                                                    To see the function, it's in my linked Javascript file called index.js  -->
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="conclusion"> 
+        <div class="container ">
+            <div class="mt-5 row copyright"> <!-- copyright clause at the end of the page -->
+                <div class="col-xs-12 ">
+                    <p> All content created of this project, with the exception of photos, was by Mia Hines. </p>
+                    <p>The following is the list of photographers as they appear: 
+                    Jeshoots.com, Casey Horner, Shitaaz Shamoon, Karl Fredrickson, and Clement M.  </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+<script type="text/javascript" src="index.js"></script> <!-- the link of my javascript file  --> 
+
+    </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="sim.css">
+    <title>VR Simulation|Anxiousness</title>
+  </head>
+  <body>
+  <!-- This entire section is the webpage you see before the simulation begins.
+        I wanted to create an introduction or transition page to inform the users of my research, give proper credit, and give directions. 
+        This transition page is on the same webpage as the simulation, because I wanted to make it easily accesible of all devices. 
+        AFRAME, the company who created the AFRAME code, stated that apple devices would not hear sound without a "click event". 
+        A "click event" is when a user clicks on a object and creates an action (or a series of actions). 
+        I didn't want a click event to be in the simulation, because not all VR googles can click on things. 
+        Ulitmately, I decided I would use the click event on the transition page to both start the simulation 
+        and to adminster the proper sound for the simulation.-->
+    
+    <!-- TRANSITION CODE -->
+    <section id="transition" style="background-color: #e24d4d;"> 
+      <div class="container">
+        <div class="row">
+          <div class="col" > <!-- HEADING  -->
+                <h2 id="font_trebuchet" class="m-4 text-center">Being Present for Anxiousness</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p> <!-- LENGTH  -->
+            <strong id="font_trebuchet">Length:</strong> 5:24 (minutes:seconds) 
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p> <!-- REASONING/EXPLAINED HYPOTHESIS -->
+            <strong id="font_trebuchet">Reasoning:</strong> 
+            Anxiousness is defined as focusing on the future or frightening possibilities. 
+            The act of being present reduces anxiousness and increases positivity. 
+            I believe a guided exercise focused on
+            being present will bring individuals feeling anxiousness to a more positive mindset.  
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p> <!-- MY RESEARCH FOR MY REASIONING/EXPLAINED HYPOTHESIS -->
+              <strong id="font_trebuchet">Background Research:</strong> 
+              A Harvard University study showed that adults spend only 50% of their time
+              focusing on the present.
+              It also found that when individuals are fully present, they are at their happiest.
+              Other research reveals that being present makes you more productive, charismatic, and happier. 
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p> <!-- DIRECTIONS  -->
+              <strong>Directions:</strong> You may stand or sit in the chair for this simulation. If you don't already have VR Goggles on,  
+              please click start and put them on right away. 
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="text-center"> <!-- BUTTON  -->
+              <button id="startBtn" style="background-color: #ea8282;" class="mb-4" onclick="start()">Start Now</button> <!-- onclick="start()" starts a function, 
+                                                                                    which is like a body of code to be executed, that takes them to the other page. 
+                                                                                    To see the function, it's in my linked Javascript file called sim.js  -->
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"> <!-- CREDIT TO WHERE I FOUND THE AUDIO AND LINK -->
+              <strong>Audio Source:</strong> FreeMindfulness.org (please check it out <a href="http://www.freemindfulness.org/download">here</a>)
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"> <!-- THE NARRATOR -->
+              <strong>Narrator:</strong> Vidyamala Burch (with Breathworks)
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"> <!-- CREDIT TO WHERE I FOUND THE PHOTO AND LINK -->
+              <strong>Photography Source:</strong> Flickr.com (please check it out <a href="https://www.flickr.com/groups/equirectangular/">here</a>)
+          </div>
+        </div>
+        <div class="row">
+          <div class="col"> <!-- PHOTOGRAPHER -->
+              <strong>Photographer:</strong> Gianni Lisci
+          </div>
+        </div>
+        
+    
+      </div>
+    </section> 
+    <!-- END OF TRANSITION CODE -->
+    
+    <!-- SIMULATION CODE -->
+    <a-scene id="sim">
+              <a-assets> 
+                  <img id="img" src="new_img/greenValley.jpg"> <!-- 360 PHOTO -->
+              </a-assets>
+                <a-sky src="#img"></a-sky> <!-- Placing the 360 photo in the simulation --> 
+    
+    </a-scene> 
+    <!-- END OF SIMULATION CODE -->
+    
+<script> var what_sim = "anxiousness" </script> <!-- Instead of making one click event for each simulation. 
+                                                      I use the same click event for all simulations. 
+                                                      I use variable what_sim in my Javascript code to tell me
+                                                      what audio to play with the correct corresponding page. 
+                                                      The variable what_sim tells me what simulation is this page.   -->
+
+<script src="sim.js"></script>
+
+  </body>
+</html>

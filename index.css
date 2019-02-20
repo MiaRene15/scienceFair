@@ -1,0 +1,85 @@
+/* GENERAL */
+html, body {
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #f9f9f9
+}
+
+.title, .welcome, .line_summary {
+    font-family: Trebuchet MS, sans-serif !important;
+    color: #6d6d6d;
+}
+
+.title {
+    font-size: 16pt;
+}
+
+/* Section Beginning */
+   
+    /* 1st row */ 
+.first_img {
+    height: 500px;
+    width: 400px;
+}
+
+
+
+.welcome {
+    font-size: 20pt;
+}
+
+.line_summary {
+    font-size: 13pt;
+}
+
+    /* 2nd row */ 
+.summary {
+    color: #fff; 
+    background-color: #6d6d6d !important;
+
+}
+
+.summary_text {
+    text-indent: 2em;
+}
+
+.summary_heading {
+    color:#fff;
+    font-size: 20pt;
+}
+
+/* SIMS */
+
+.sim_image {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #20475d;
+}
+
+button:hover {
+    background-color: #2b5e7a;
+}
+
+.the_sim {
+    /* border-bottom: 4px solid #a8a8a8; */
+    border-top: 4px solid #a8a8a8;
+}
+
+.the_sim_end {
+ border-bottom: 4px solid #a8a8a8; 
+    border-top: 4px solid #a8a8a8;
+}
+
+/* Conclusion */ 
+

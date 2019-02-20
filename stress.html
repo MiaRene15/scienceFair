@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="sim.css">
+    <title>VR Simulation|Stress</title>
+  </head>
+  <body>
+  <section id="transition" style="background-color: #b23333 ;"> 
+      <div class="container">
+        <div class="row">
+          <div class="col" >
+                <h2 id="font_trebuchet" class="m-4 text-center">Confidence for Stress</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>
+            <strong id="font_trebuchet">Length:</strong> 6:31 (minutes:seconds) 
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>
+            <strong id="font_trebuchet">Reasoning:</strong> 
+           Individuals with less stress have more confidence in themselves. 
+           I believe a guided meditation about confidence will bring individuals experiencing stress to a more positive mindset.   
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>
+              <strong id="font_trebuchet">Background Research:</strong> 
+             Emmy E. Werner, a research psychologist at University of California, Berkeley, studied the lives of 700 children with
+             acholic parents over 40 years. She wanted to determine the qualities of people who overcome stressful situations. 
+             One of those qualities was a strong belief in themselves to resolve problems aka confidence. 
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>
+              <strong>Directions:</strong> You may stand or sit in the chair for this simulation. If you don't already have VR Goggles on,  
+              please click start and put them on right away. 
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="text-center"> 
+              <button id="startBtn" style="background-color: #c97070" class="mb-4" onclick="start()">Start Now</button> 
+            </div>
+          </div>
+        </div>
+      
+        <div class="row">
+          <div class="col">
+            
+              <strong>Audio Source:</strong> Michelle Chalfant Youtube Channel (please check it out <a href="https://www.youtube.com/channel/UCZ2buoRyaYIjuBugJqwKzDw/featured">here</a>)
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            
+              <strong>Narrator:</strong> Michelle Chalfant
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            
+              <strong>Photography Source:</strong> Flickr.com (please check it out <a href="https://www.flickr.com/groups/equirectangular/">here</a>)
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            
+              <strong>Photographer:</strong> Sitoo
+            
+          </div>
+        </div>
+        
+    
+      </div>
+    </section>
+    <a-scene id="sim">
+        <a-assets> 
+            <img id="img" src="new_img/canyon.jpg">
+        </a-assets>
+                    <a-sky src="#img"></a-sky>
+                  
+    
+    <script> var what_sim = "stress" </script>
+    <script src="sim.js"></script>
+  </body>
+</html>
