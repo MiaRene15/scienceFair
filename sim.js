@@ -1,7 +1,7 @@
 
   var transition = document.getElementById("transition") // THE ENTIRE CODE OF THE TRANSITION PAGE
   var sim = document.getElementById("sim") // THE ENTIRE CODE OF THE SIMULATION 
-  var end = document.getElementById("end") // THE END SCENE 
+  // var end = document.getElementById("end") // THE END SCENE 
   var audio_despondency = new Audio('audio/gratitudeSpace.mp3'); // AUDIO FOR DESPONDENCY 
   var audio_anxiousness = new Audio('audio/tension_releaseSpace.mp3'); // AUDIO FOR ANXIOUSNESS
   var audio_overwhelmed = new Audio('audio/deep_breathingSpace.mp3'); // AUDIO FOR OVERHWHELMED
@@ -14,6 +14,7 @@
     
     if ( what_sim == "despondency") { // IF THE SIMULATION IS THE DESPONDENCY 
       audio_despondency.play(); // PLAY DESPONDENCY AUDIO 
+        // setTimeout(function(){end.style.display;},6030);
       
       
     } else if (what_sim == "anxiousness") { // IF THE SIMULATION IS ANXIOUSNESS 
@@ -22,7 +23,7 @@
       
     } else if (what_sim == "overwhelmed") { // IF THE SIMULATION IS OVERHWHELMED 
       audio_overwhelmed.play(); // PLAY OVERHWHELMED AUDIO
-      setTimeout(function(){end.style.display;},6030);
+   
    
     } else if (what_sim == "stress") { // IF THE SIMULATION IS STRESS 
       audio_stress.play(); //PLAY STRESS AUDIO 
