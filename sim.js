@@ -33,7 +33,6 @@
     }
   }
 
-
 function alertFunc() {
-  alert("Hello!");
+  end.style.display = "block"
 }
