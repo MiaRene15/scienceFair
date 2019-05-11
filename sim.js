@@ -14,7 +14,7 @@
     
     if ( what_sim == "despondency") { // IF THE SIMULATION IS THE DESPONDENCY 
       audio_despondency.play(); // PLAY DESPONDENCY AUDIO 
-      setTimeout(alertFunc, 3000);
+      // setTimeout(alertFunc, 3000);
       
     } else if (what_sim == "anxiousness") { // IF THE SIMULATION IS ANXIOUSNESS 
       audio_anxiousness.play(); // PLAY ANXIOUSNESS AUDIO
@@ -33,7 +33,7 @@
     }
   }
 
-function alertFunc() {
+/* function alertFunc() {
   end.style.display = "block";
   console.log("block");
-}
+}*/
