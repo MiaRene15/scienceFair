@@ -94,7 +94,16 @@
         
       </div>
     </section>
-  <section id="end" style="background-color: #000;"> 
+
+    <a-scene id="sim">
+        <a-assets> 
+            <img id="img" src="new_img/rollingHills.jpg" rotation="0 -130 0">
+
+        </a-assets>
+                    <a-sky src="#img"></a-sky>
+    </a-scene>
+ 
+    <section id="end" style="background-color: #000;"> 
         <div class="row">
           <div class="col">
             <p>
@@ -110,15 +119,7 @@
           </div>
         </div>
     </section> 
-
-    <a-scene id="sim">
-        <a-assets> 
-            <img id="img" src="new_img/rollingHills.jpg" rotation="0 -130 0">
-
-        </a-assets>
-                    <a-sky src="#img"></a-sky>
-    </a-scene>
-
+    
 <script> var what_sim = "despondency" </script>
 <script src="sim.js"></script>
 
