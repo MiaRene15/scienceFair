@@ -34,5 +34,6 @@
   }
 
 function alertFunc() {
-  end.style.display = "block"
+  end.style.display = "block";
+  console.log("block");
 }
